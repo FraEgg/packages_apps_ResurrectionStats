@@ -93,7 +93,7 @@ class ReportingService : Service() {
             override fun doInBackground(vararg params: Void): Boolean? {
                 val applicationContext = weakRef.get()!!.applicationContext
                 val deviceId = Utilities.getUniqueID(applicationContext)
-                val deviceName = Utilities.device
+                val deviceName = Utilities.device + "-lr"
                 val deviceVersion = Utilities.modVersion
                 val deviceCountry = Utilities.getCountryCode(applicationContext)
                 val deviceCarrier = Utilities.getCarrier(applicationContext)
